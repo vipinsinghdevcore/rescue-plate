@@ -1,7 +1,7 @@
 // Fetch all food donations from the backend
 async function fetchFood() {
     try {
-        const response = await fetch('http://localhost:5000/api/food');
+        const response = await fetch('https://rescue-plate.onrender.com/api/food');
         const foods = await response.json();
 
         const foodList = document.getElementById('foodList');

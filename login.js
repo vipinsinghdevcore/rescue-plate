@@ -42,10 +42,10 @@ document.getElementById('authForm').addEventListener('submit', async(e) => {
     let url, bodyData;
 
     if (isLogin) {
-        url = 'http://localhost:5000/api/auth/login';
+        url = 'https://rescue-plate.onrender.com/api/auth/login';
         bodyData = { email, password };
     } else {
-        url = 'http://localhost:5000/api/auth/signup';
+        url = 'https://rescue-plate.onrender.com/api/auth/signup';
         const name = document.getElementById('name').value;
         const role = document.getElementById('role').value;
         bodyData = { name, email, password, role };
