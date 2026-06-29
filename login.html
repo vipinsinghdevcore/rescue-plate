@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Rescue Plate</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">Rescue<span>Plate</span></a>
+        </nav>
+    </header>
+
+    <section class="form-container">
+        <div class="form-box">
+            <h2 id="formTitle">Login</h2>
+            <p id="formSubtitle">Welcome back! Please login to your account.</p>
+
+            <form id="authForm">
+                <!-- Name field (Only for Signup) -->
+                <div class="input-group" id="nameGroup" style="display: none;">
+                    <label>Business / NGO Name</label>
+                    <input type="text" id="name" placeholder="e.g., Pizza Palace">
+                </div>
+
+                <div class="input-group">
+                    <label>Email</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Password</label>
+                    <input type="password" id="password" placeholder="Enter your password" required>
+                </div>
+
+                <!-- Role selector (Only for Signup) -->
+                <div class="input-group" id="roleGroup" style="display: none;">
+                    <label>I am a...</label>
+                    <select id="role" style="width: 100%; padding: 1rem; border: 1px solid #ddd; border-radius: 8px;">
+                        <option value="restaurant">Restaurant</option>
+                        <option value="ngo">NGO / Shelter</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn-primary" id="submitBtn">Login</button>
+            </form>
+
+            <p style="text-align: center; margin-top: 1.5rem;">
+                <span id="toggleText">Don't have an account? </span>
+                <a href="#" id="toggleBtn" style="color: var(--primary); font-weight: 600;">Sign up here</a>
+            </p>
+
+            <div id="authMessage" class="success-message" style="display: none;"></div>
+        </div>
+    </section>
+
+    <script src="login.js"></script>
+</body>
+
+</html>

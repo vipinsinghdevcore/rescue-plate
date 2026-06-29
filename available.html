@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Available Food - Rescue Plate</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">Rescue<span>Plate</span></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html#how">How it Works</a></li>
+                <li><a href="index.html#impact">Impact</a></li>
+                <li><a href="index.html#partners">Partners</a></li>
+                <li><a href="login.html" id="loginBtn" class="btn-nav">Login</a></li>
+                <li><a href="#" id="logoutBtn" class="btn-nav" style="display: none;">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="available-container">
+        <h2 class="section-title">Available Food Pickups</h2>
+        <p style="text-align: center; color: var(--gray); margin-bottom: 3rem;">NGOs can browse available food below and arrange a pickup.</p>
+
+        <!-- This empty div is where we will inject the food from the database -->
+        <div id="foodList" class="food-grid">
+            <p style="text-align: center;">Loading available food...</p>
+        </div>
+    </section>
+
+    <script src="available.js"></script>
+</body>
+
+</html>

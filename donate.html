@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate Food - Rescue Plate</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar (Same as index.html) -->
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="logo">Rescue<span>Plate</span></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html#how">How it Works</a></li>
+                <li><a href="index.html#impact">Impact</a></li>
+                <li><a href="index.html#partners">Partners</a></li>
+                <li><a href="login.html" id="loginBtn" class="btn-nav">Login</a></li>
+                <li><a href="#" id="logoutBtn" class="btn-nav" style="display: none;">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Donate Form Section -->
+    <section class="form-container">
+        <div class="form-box">
+            <h2>Donate Surplus Food</h2>
+            <p>Fill out the details below. An NGO will be notified instantly.</p>
+
+            <!-- The Form -->
+            <form id="donateForm">
+                <div class="input-group">
+                    <label>Restaurant/Business Name</label>
+                    <input type="text" id="restaurantName" placeholder="e.g., Pizza Palace" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Type of Food</label>
+                    <input type="text" id="foodType" placeholder="e.g., Cooked meals, Raw veggies" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Quantity (in kg or meals)</label>
+                    <input type="text" id="quantity" placeholder="e.g., 15 kg" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Pickup Address</label>
+                    <input type="text" id="address" placeholder="Full address for pickup" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Best Time to Pickup</label>
+                    <input type="text" id="pickupTime" placeholder="e.g., Today before 8 PM" required>
+                </div>
+
+                <button type="submit" class="btn-primary">Submit Donation</button>
+            </form>
+
+            <!-- This is where we will show the success message -->
+            <div id="successMessage" class="success-message" style="display: none;">
+                ✅ Thank you! Your food donation has been saved to the database. An NGO will contact you soon!
+            </div>
+        </div>
+    </section>
+
+    <script src="donate.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rescue Plate - Don't Waste It, Rescue It</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header>
+        <nav class="navbar">
+            <a href="#" class="logo">Rescue<span>Plate</span></a>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="index.html#how">How it Works</a></li>
+                <li><a href="index.html#impact">Impact</a></li>
+                <li><a href="index.html#partners">Partners</a></li>
+                <li><a href="login.html" id="loginBtn" class="btn-nav">Login</a></li>
+                <li><a href="#" id="logoutBtn" class="btn-nav" style="display: none;">Logout</a></li>
+            </ul>
+            <div class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Don't waste it. <span>Rescue it.</span></h1>
+            <p>Rescue Plate connects restaurants and supermarkets with surplus food to local shelters and NGOs. Together, we can fight hunger and reduce food waste.</p>
+            <div class="hero-btns">
+                <a href="donate.html" class="btn-primary">Donate Food</a>
+                <a href="available.html" class="btn-secondary">Request Food</a>
+            </div>
+        </div>
+        <div class="hero-image">
+            <!-- CSS shaped graphic instead of external image -->
+            <div class="floating-card card-1">
+                <h3>12 Tons</h3>
+                <p>Food Saved</p>
+            </div>
+            <div class="floating-card card-2">
+                <h3>Live</h3>
+                <p>Pickup Available</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works -->
+    <section class="how-it-works" id="how">
+        <h2 class="section-title">How It Works</h2>
+        <div class="steps-grid">
+            <div class="step-card">
+                <div class="step-icon">📋</div>
+                <h3>1. Post Surplus</h3>
+                <p>Restaurants log excess food into the app with just a few taps before closing time.</p>
+            </div>
+            <div class="step-card">
+                <div class="step-icon">🔔</div>
+                <h3>2. Get Matched</h3>
+                <p>Our algorithm instantly notifies the nearest verified NGOs and food banks.</p>
+            </div>
+            <div class="step-card">
+                <div class="step-icon">🚚</div>
+                <h3>3. Pickup & Deliver</h3>
+                <p>Volunteers pick up the food and deliver it to people who need it most.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Impact / Stats Section -->
+    <section class="impact-section" id="impact">
+        <h2 class="section-title">Our Impact So Far</h2>
+        <div class="stats-container">
+            <div class="stat-box">
+                <h3 class="counter" data-target="45000">0</h3>
+                <p>Meals Rescued</p>
+            </div>
+            <div class="stat-box">
+                <h3 class="counter" data-target="120">0</h3>
+                <p>Active Partners</p>
+            </div>
+            <div class="stat-box">
+                <h3 class="counter" data-target="28000">0</h3>
+                <p>kg CO2 Saved</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Marquee -->
+    <section class="partners" id="partners">
+        <h2 class="section-title">Trusted by Local Businesses</h2>
+        <div class="marquee">
+            <div class="marquee-content">
+                <span>☕ Brew & Co</span>
+                <span>🍕 Pizza Palace</span>
+                <span>🥗 Green Bowl</span>
+                <span>🍔 Burger Hub</span>
+                <span>🍰 Sweet Treats</span>
+                <!-- Duplicate for seamless loop -->
+                <span>☕ Brew & Co</span>
+                <span>🍕 Pizza Palace</span>
+                <span>🥗 Green Bowl</span>
+                <span>🍔 Burger Hub</span>
+                <span>🍰 Sweet Treats</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>© 2024 Rescue Plate. Built with 💚 for a better planet.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
