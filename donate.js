@@ -18,7 +18,7 @@ document.getElementById('donateForm').addEventListener('submit', async function(
 
     try {
         // 2. Send the data to your Backend API
-        const response = await fetch('https://rescue-plate.onrender.com/api/food', {
+                const response = await fetch('https://rescue-plate-api-v2.onrender.com/api/food', { 
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
